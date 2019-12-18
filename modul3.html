@@ -1,0 +1,100 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML CSS JS - Module 2</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+        .least-profit td {
+            color:pink;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Модуль №2</h1>
+        <small>Щерба Анастасія</small>
+        <br>
+        <small>варіант <b>8</b></small>
+        
+        <hr>
+        
+        <div>
+           <table class="table table-hover">
+               <thead>
+                   <th>topic</th>
+                   <th>short</th>
+                   <th>data</th>
+                   <th> count_discussion </th>
+                   
+               </thead>
+               <tbody id="w">
+
+            </tbody>
+        </table>
+
+           <hr>
+           <button class="btn btn-primary " id="actionButton">
+               forum
+           </button>
+        </div>
+
+    </div>
+    <script>
+        let forums=[
+    {
+        topic:"школа",
+        short:"відвідуваність школи",
+        data:"10липня",
+        count_discussion:5;  
+    },
+    {
+        topic:"університет",
+        short:"відвідуваність університету",
+        data:"17грудня",
+        count_discussion:8;  
+    },
+    {
+        topic:"булінг",
+        short:"булінг в дитячому віці",
+        data: "28квітня",
+        count_discussion: 3;  
+    },
+    {
+        topic:"шкидливі звички",
+        short:"куріння і наркотики",
+        data:"30березня",
+        count_discussion:1,  
+    },
+    {
+        topic:"безпека",
+        short:"безпека на дорозі",
+        data:"18грудня",
+        count_discussion:8,
+    },
+]
+
+    function A(){
+        let w = document.getElementById("w")
+        Personal.forEach(item => {
+        rp.innerHTML += `<tr>
+                    <td>${item.topic}</td>
+                    <td>${item.short}</td>
+                    <td>${item.data}</td>
+                    <td>${item.count_discussion}</td>
+                    
+                </tr>`;
+            });
+        }     
+     
+    A()
+    </script>
+</body>
+
+</html>

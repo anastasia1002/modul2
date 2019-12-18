@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <link href="style/main.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <label> Українська гривня<input type="number" name="grivnas" id="grivnas"></label>
+    <button id="button1">перевод</button>
+    <label> юань Женьміньбі <input type="number" name="yuan" id="yuan"></label>
+    <script>
+        function yuans(x) {
+            return x * 3.36;
+        }
+
+        let button1 = document.getElementById("button1");
+        button1.onclick = function (x) {
+            let minutes = parseFloat(document.getElementById("grivnas").value);
+            document.getElementById("yuan").value = yuans(minutes);
+
+
+        }
+
+    </script>
+</body>
+</html>
